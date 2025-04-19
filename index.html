@@ -3,51 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Explore the world with Touristatales – your guide to unforgettable travel stories, tips, and destinations."/>
-  <title>Touristatales | Travel Tales & Destinations</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Touristatales – Explore the World with Us</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: #1e3a5f;
+      background: linear-gradient(to right, #006699, #00aabb);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #f4f4f4;
-      padding: 10px 0;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     nav a {
-      margin: 0 15px;
+      padding: 15px 20px;
+      color: #006699;
       text-decoration: none;
-      color: #1e3a5f;
-      font-weight: bold;
+      font-weight: 600;
     }
-    .hero {
-      background-image: url('hero-image.jpg');
-      background-size: cover;
+    nav a:hover {
+      background-color: #f0f0f0;
+    }
+    .featured {
+      padding: 60px 20px;
+      background: url('travel-banner.jpg') center/cover no-repeat;
       color: white;
-      padding: 100px 20px;
       text-align: center;
     }
-    .content {
+    .featured h2 {
+      font-size: 2.5em;
+    }
+    .section {
       padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      background-color: white;
+      border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .newsletter {
+      background-color: #e0f7fa;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #00aabb;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
     }
     footer {
-      background-color: #1e3a5f;
+      background-color: #006699;
       color: white;
       text-align: center;
       padding: 20px;
@@ -58,44 +89,48 @@
 
   <header>
     <h1>Touristatales</h1>
-    <p>Your gateway to the world’s most amazing stories & travel tips</p>
+    <p>Adventure awaits — let us take you there!</p>
   </header>
 
   <nav>
     <a href="#">Home</a>
     <a href="#">Destinations</a>
-    <a href="#">Travel Tips</a>
-    <a href="#">Blog</a>
+    <a href="#">Stories</a>
+    <a href="#">Travel Guides</a>
     <a href="#">Contact</a>
   </nav>
 
-  <section class="hero">
-    <h2>Discover. Explore. Repeat.</h2>
-    <p>Let our stories inspire your next adventure</p>
+  <section class="featured">
+    <h2>Experience the Beauty of the World</h2>
+    <p>From hidden gems to popular wonders — discover something new.</p>
   </section>
 
-  <section class="content">
+  <section class="section">
     <div class="card">
-      <h3>Top 10 Must-Visit Places in 2025</h3>
-      <p>From Iceland to Indonesia – explore breathtaking destinations handpicked for the wanderlust in you.</p>
+      <h3>🌍 Top 5 Underrated Travel Spots in 2025</h3>
+      <p>Discover places that haven’t hit the mainstream yet. Escape the crowds and experience pure magic.</p>
     </div>
     <div class="card">
-      <h3>Backpacking Through Europe</h3>
-      <p>Travel light, live large – everything you need to know about traveling on a budget through Europe.</p>
+      <h3>🧳 Travel Essentials Checklist</h3>
+      <p>Don’t leave without checking this ultimate guide to stress-free packing and preparation.</p>
     </div>
     <div class="card">
-      <h3>Why Japan Should Be On Your Bucket List</h3>
-      <p>A mix of tradition, innovation, and natural beauty. Here’s why Japan is a timeless favorite.</p>
+      <h3>📸 Capture the Journey: Best Cameras for Travel</h3>
+      <p>From budget-friendly to professional gear — make every shot count.</p>
     </div>
+  </section>
+
+  <section class="section newsletter">
+    <h2>Join Our Travel Community</h2>
+    <p>Subscribe to get inspiring travel stories, tips, and deals in your inbox.</p>
+    <form>
+      <input type="email" placeholder="Your email address" required />
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Touristatales. All rights reserved.</p>
-    <p>Follow us on 
-      <a href="#" style="color: #fff; text-decoration: underline;">Instagram</a>, 
-      <a href="#" style="color: #fff; text-decoration: underline;">YouTube</a>, and 
-      <a href="#" style="color: #fff; text-decoration: underline;">Facebook</a>.
-    </p>
+    <p>&copy; 2025 Touristatales.com | Follow us on Instagram, Twitter & Facebook</p>
   </footer>
 
 </body>
